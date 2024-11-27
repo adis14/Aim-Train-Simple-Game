@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    color: white;
+    overflow: hidden;
+}
+
+.game-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+#crosshair {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ffcc00;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+#target {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background-color: red;
+    border-radius: 50%;
+    display: none;
+    cursor: pointer;
+    
+}
+#target:active {
+    opacity: .6;
+    transition: .1s;
+}
+
+#score, #timer {
+    position: absolute;
+    top: 20px;
+    font-size: 18px;
+}
+
+#score {
+    left: 20px;
+}
+
+#timer {
+    right: 20px;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.popup p {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.popup button {
+    padding: 10px 20px;
+    background-color: #ffcc00;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.popup button:hover {
+    background-color: #ffdd44;
+}

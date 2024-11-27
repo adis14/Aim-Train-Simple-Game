@@ -1,0 +1,131 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    color: #fff;
+    text-align: center;
+}
+
+/* Main Container */
+.container {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    width: 400px;
+}
+
+/* Headings */
+h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #ffcc00;
+}
+
+h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #ffcc00;
+}
+
+/* Button Styles */
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #444;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+button:active {
+    transform: scale(1.05);
+}
+
+/* Difficulty Button Styles */
+button.easy {
+    background-color: #4caf50;
+}
+
+button.medium {
+    background-color: #ff9800;
+}
+
+button.hard {
+    background-color: #f44336;
+}
+
+/* Button Hover Effects */
+button.easy:hover {
+    background-color: #43a047;
+}
+
+button.medium:hover {
+    background-color: #fb8c00;
+}
+
+button.hard:hover {
+    background-color: #e53935;
+}
+
+
+/* Existing styles... */
+
+/* Pop-up message styling */
+.popup-message {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    z-index: 10;
+    width: 300px;
+}
+
+.popup-message p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.popup-message button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ffcc00;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    color: black;
+}
+
+.popup-message button:hover {
+    background-color: #ffdd44;
+}
